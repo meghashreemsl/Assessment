@@ -1,0 +1,111 @@
+Test 2
+
+1. null
+
+
+2. Exception handling : Exceptions terminates the program abruptly.
+Exception handling is handling these exceptions using try catch block which  allows the program exceute without any interruption.
+catch acts as the handler.
+try block is given to the line where the error occurs.
+ we can handle exceptions using try catch block.
+
+ex: class Exception {
+    public static void main(String []args){
+    int a=10;
+    int b=0;
+    try{
+    c=a/b;
+    System.out.println(c);
+    }
+    catch(Exception e){
+    System.out.println("handled");
+   }
+
+3.custom exceptions are the user defined exceptions. user creating their own exception.
+custom exceptions are used to handle user defined exceptions to have our own exception and message.
+
+4.encapsulation : It is a method to wrap data in a single capsule by using private key word for the data members, which keeps the data private in that class.
+
+Rules of encapsulation:
+* data members have to be private.
+*getter and setter methods have to be created for all the data members created.
+* should contain a constructor method.
+
+Ex: class Encapsulation{
+
+	private String name; // private data members
+	private int id;
+		 public class Encapsulation(){   // constructor
+			System.out.println("constructor invoked");
+ 
+  			 }
+		public String getName(){ // getter method
+		return name;
+		}
+ 		public void setName(String name){ // setter method
+		this.name=name;
+        
+		}
+		 public int id(){
+		return id;
+		}
+		public void setId(int id){
+		this.id =id;
+		}
+		}
+
+5.polymorphism : It is a concept in which  the object behaves differntly in different instances, meaning it takes different forms in different instances.
+There are two types of polymorphism : runtime and compile time 
+Ex: class Cricket{
+    	void runs(){
+	System.out.println("runs invoked");
+
+	}
+ 	class NoOfRuns extends Cricket{
+		void runs(){
+		System.out.println("no of runs is equal to 100");
+		}
+			public static void main(String []args){
+			Cricket cricket = new NoOfRuns();
+			cricket.runs();
+		}
+	}
+
+6. method overloading : it is a concept in which the class contains methods of having same name but they have different  type of parameters.
+ex1: wait()
+    wait(arg1,arg2)
+ex: class Calculatoroverloading{
+	public void add(byte a, byte b){
+		System.out.println(a+b);
+
+	}
+        public void add(double a, double b){
+		System.out.println(a+b);
+        }
+ 	class CalculatorTester(){
+		public static void main(String[]args){
+       		Calculatoroverloading calc = new Calculatoroverloading();
+       		calc.add(2,3);
+		calc.add(4.5,57.8);
+}
+}
+
+7.methdod overriding : It is a concept in which the class methods of same name but different implementation.
+ example : tostring() method
+@override
+public String toString(){
+return "method overriding";
+}
+ 
+
+8. It contains two main methods 
+no output.
+
+11. abstraction : the process of hiding the data and not showing the functionality (implemntation) in this we write only the  abstract methods.
+for abstraction we create interface , interface is a media to communicate between the user and any device.
+
+
+
+
+
+
