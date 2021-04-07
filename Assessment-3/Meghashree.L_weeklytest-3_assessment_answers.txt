@@ -1,0 +1,120 @@
+weekly assessment 3
+
+1. DB means database. Database is used to store data large data in one place. 
+
+It is used to store, add, delete, update data ,basically used for data manipulation.
+
+2. DBMS :Database management system is a software used to store,retreive ,manage data.
+RDMS: Relational database management system it stores data in tables.
+
+DBMS: 
+*It stores data as file.
+* It deals with small data , it supports single user.
+*DBMS does not apply any security with regards to data.
+*Examples for DBMS are file systems, xml etc
+*does not support distributed database.
+
+RDBMS:
+*RDBMS store data in tabular form.
+*The tables have unique identifier called primary key, and alos it has foreign key,it acts as a reference variable of primary key.(foriegn key is usually used when we have multiple tables.
+*The data is stored in the form of tables.
+*It support distributed database.
+*Examples for RDBMS : MYSQL,postgre,SQL,server,oracle etc
+
+
+3.SQL :structure query language :It is a computer languages which gives instructions to the database.It allows to access and manupilate the databases.
+
+It is used show data from a database. 
+It is used to manage the  database.
+it is use to modify the data 
+It is used to insert the data
+It is used to create functions ,views and stored procedures.
+
+SQL is used as DDL (dat definition language) which means you can automatically data base can be created.
+SQL is used as DML (Data Manipulation Language ) it can be used for keeping the previously existing database, so it is widely used to  enter information , change information with respect to database.
+
+examples : we use SELECT,UPDATE,INSERT,WHERE
+
+
+4 jdbc : java database Connectivity : it is an application programming interface(API) , it is used to for java database connectivity.
+API helps to interact  with another application , backbone for api is abstraction , used to achieve loose coupling with the help of interface.
+STEPS IN JDBC
+1 load and register the driver
+2 Establish the connection with DB server.
+3.create a statement or a platform 
+4. Execute the query 
+5. Close all the connections.
+
+
+5  OOPS: It is object oriented programming system , it uses objects and classes it provides many concepts like inheritance,encapsulation, polymorphism.
+inheritance : its i acquiring the properties of another class ex: http servlet is abstract class which extends generic servlet.
+abstraction :it is creating interface class and writing only the methods not showing the implementation.so interface class contains only the methods without implemntation.ex: Statement is an interface
+encapsulation : it is binding the data, basically the data members are made private ,it consists of default constructor , setters and getter methods ex: DTO class
+polymorphism : object acting differently in different instances ex toString method is used for overriding
+
+6 runtime polymorphism : method overriding occurs at run time 
+ex: doPost() method , toString method 
+compile time polymorphism: method overloading  occurs at compile time.ex : wait(), wait(arg0,arg1), wait(arg0,arg1,arg3) 
+
+
+7.constructor is a special type of method which has the name same as classname.
+two types of constructor: 1. default constructor : it does not have any paramter. 
+ex: public class voter{
+public class voter(){
+}
+2. parametrized constructor : it is a constructor which has arguments.
+public class voter{
+public class voter(int age){
+}
+
+construtor chaining is calling another constructor using this keyword.
+
+8.Mysql is database management system , it ia relational database management system based on sql 
+It is used for adding,accessing and managing the data in database.
+
+9.and 10: .create schema wolken;
+create table movie_details(
+id int not null,
+title varchar(20),
+category varchar(20),
+language varchar(45),
+
+primarykey(id)
+
+);
+
+create table movie_member(
+id int not null,
+first_name varchar(20),
+last_name varchar(20),
+movie_id int 
+age int
+primarykey(id)
+ foreign key(movie_id) references movie_details(id),
+);
+
+
+10. insert into(id,first_name,last_name,movie_id,age)
+values(1,"Adam","Smith",1,20),
+(2,"Ravi","kumar",2,19),
+(3,"susan","davidson",5,17),
+(4,"")
+);
+         
+11. select * from movie_details left join movie_members on movie_members.Id = movie_details.Id;
+
+12.select * from movie_details right join movie_members on movie_members.Id = movie_details.Id;
+
+13. select * from movie_members where Id=4;
+
+14. select * from movie_members where Id=4;
+
+15. select * from movie_members, movies_details where movie_members.Id = movie_details_Id;
+
+16.select * from movie_details right join movie_members on movie_members.Id = movie_details.Id; 
+
+17.select distinct * from  movie_members;
+
+select distinct * from  movie_details;
+
+
