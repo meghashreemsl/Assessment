@@ -1,0 +1,131 @@
+Meghashree L
+
+1. What is an Object?
+Object is an instance of a class.
+
+2. What is a Class?
+Class is a blueprint which contains states and behaviours. 
+It is a objective for the creation of object.
+
+3. What is variables? why we use variables?
+Variables are the containers which contains the different types of data.
+we use variables to store data or assign values.
+
+4. What are instance variables?
+Instance variables are non static variables declared inside the class outside the main method.
+
+5. What is a static variable?
+Static variables are variables declared uisng static keyword within the class outside the method.
+
+6. What is the difference between class variable and instance variable?
+
+class variables :  
+* These variables can be accessed by calling the class name , object creation is not required.                                  
+* These are also known as static variables which are declared using static keyword within the class outside the method .
+instance variables :
+*These varaibles are also known as global variables declared within the class outside the method.
+*These variables can be accessed through objects creation using new keyword by creating reference variable.                                           
+
+7. How will you create an object? with example?
+To create an object we use new keyword and class name.
+
+Ex: class Industries{
+    	String name;
+    	String type;
+		Public static void main(String []a){
+			Industries i = new Industries();
+			System.out.println(i.name);
+			System.out.println(i.type);
+		}
+	}
+// output
+null 
+null
+
+8. What is a method?
+method are basically functions which perform specific tasks or the block of code which specifies the task to be performed.
+methods are declared by method name followed by parentheses, in which we can pass values which are also known as parameters.
+
+9. what is method overloading? 
+The methods within a class having same name but different type of parameters is known as method overloading. 
+
+Practical
+10 method overloading
+class calculator{
+	 static int add(int a,intb){
+		return a+b;
+	}
+        static double add(double a, double b, double c){
+		return a+b+c;
+	}
+		public static void main(String []a){
+			System.out.println(calculator.add(11,7));
+			System.out.println(calculator.add(4,7,9));
+	}
+}
+// output
+18
+20
+11. print month of year
+class monthsSwitchCase{
+	public static void main(String[]args){
+		int n=12;
+		switch(n){
+		case 1:
+		System.out.println("January");
+		break;
+		case 2:
+		System.out.println("Feburary");
+		break;
+		case 3:
+		System.out.println("March");
+		break;
+		case 4:
+		System.out.println("April");
+		break;
+		case 5:
+		System.out.println("May");
+		break;
+		case 6:
+		System.out.println("June");
+		break;
+		case 7:
+		System.out.println("July");
+		break;
+		case 8:
+		System.out.println("August");
+		break;
+		case 9:
+		System.out.println("September");
+		break;
+		case 10:
+		System.out.println("October");
+		break;
+		case 11:
+		System.out.println("November");
+		break;
+		case 12:
+		System.out.println("December");
+		break;
+		
+		default:
+		System.out.println("Invalid number");
+		
+		}
+	}
+}
+
+// output 
+December
+
+12. factorial 
+class Factorial{
+	public static void main(String []a){
+		int i, fact=;
+		int numbere=5;
+			for(i=1;i<=number;i++){
+				fact=fact*i;
+			}
+System.out.println("Factorial of"+number+"is" +fact);
+}
+}
